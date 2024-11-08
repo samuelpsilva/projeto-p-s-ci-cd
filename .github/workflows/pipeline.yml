@@ -1,4 +1,4 @@
-
+---
 name: Execução manual
 on:
   workflow_dispatch: 
@@ -12,5 +12,5 @@ jobs:
         run: npm install -g yarn
       - name: Instalando dependências
         run: yarn
-      - name: Executando Teste E2E (end-to-end)
-        run: yarn run e2e
+      - name: Run E2E tests
+  run: yarn run test:e2e

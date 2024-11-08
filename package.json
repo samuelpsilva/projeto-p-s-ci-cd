@@ -4,7 +4,7 @@
   "description": "Projeto WEB PGATS",
   "main": "index.js",
   "scripts": {
-    "e2e":: "cypress run"
+    "e2e": "cypress run"
   },
   "keywords": [],
   "author": "Samuel Silva",

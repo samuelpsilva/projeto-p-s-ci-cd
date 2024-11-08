@@ -1,6 +1,4 @@
-
-name: Pipeline n1 - Execução de Testes PGATS
-
+name: Pipeline N1 - Execução de Testes
 
 on:
   push:
@@ -11,26 +9,20 @@ on:
       - main
 
 jobs:
-  test:
-    # Escolhe o ambiente de execução
+  run-tests:
     runs-on: windows-latest
-
-    # Etapas do pipeline
+    
     steps:
-   
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout do código
+        uses: actions/checkout@v3  # Atualize para v3
+        
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3  # Atualize para v3
         with:
-          node-version: '12'
-
-      # Terceira etapa: instalar dependências do projeto (npm install)
-      - name: Install dependencies
+          node-version: '16'  # ou '20' para a versão mais recente
+      
+      - name: Instalar dependências
         run: npm install
-
-      # Quarta etapa: executar os testes (npm test)
-      - name: Run tests
+      
+      - name: Executar testes
         run: npm test

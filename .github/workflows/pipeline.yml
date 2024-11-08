@@ -1,0 +1,16 @@
+
+name: Execução manual
+on:
+  workflow_dispatch: 
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      - name: Instalando Yarn
+        run: npm install -g yarn
+      - name: Instalando dependências
+        run: yarn
+      - name: Executando Teste E2E (end-to-end)
+        run: yarn run e2e

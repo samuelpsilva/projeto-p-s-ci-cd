@@ -7,7 +7,7 @@ describe('Caso de Teste Number Two', () => {
    cy.get('a[href$=login]').click()
    cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=text]:nth-child(2)').click()
    cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=text]:nth-child(2)').type('Samuel QA')
-   cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)').type('testeaaad12@testesamuelqa.com.br')
+   cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)').type('testeaaad1233@testesamuelqa.com.br')
    cy.get('#form > div > div > div:nth-child(3) > div > form > button').click()
    cy.get("#id_gender1").click()
    cy.get("#password").click().type('Samuel12345')

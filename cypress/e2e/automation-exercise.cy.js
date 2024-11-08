@@ -8,7 +8,7 @@ describe('Automation Exercise Testes Cases Number One', () => {
 
         cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=text]:nth-child(2)').type('Samuel QA')
 
-        cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)').type('samuel@33213.com')
+        cy.get('#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)').type('samuel@samuelteste.com')
 
         cy.get('#form > div > div > div:nth-child(3) > div > form > button').click()
 

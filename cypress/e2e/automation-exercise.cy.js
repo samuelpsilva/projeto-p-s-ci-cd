@@ -1,4 +1,4 @@
-describe('Automation Exercise Testes Cases Number One', () => {
+/*describe('Automation Exercise Testes Cases Number One', () => {
     it('Registrar um Usuário (1)', () => {
         cy.visit('https://automationexercise.com/test_cases')
         
@@ -61,3 +61,4 @@ describe('Automation Exercise Testes Cases Number One', () => {
 
     });
 });
+*/

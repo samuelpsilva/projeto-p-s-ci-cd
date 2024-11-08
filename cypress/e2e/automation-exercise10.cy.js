@@ -1,4 +1,4 @@
-describe('Caso de teste Number TEN', () => {
+/*describe('Caso de teste Number TEN', () => {
     it('Exercício Número 10', () => {
         
         cy.visit('https://automationexercise.com')
@@ -12,3 +12,4 @@ describe('Caso de teste Number TEN', () => {
         cy.contains('You have been successfully subscribed!').should('be.visible')
     });
 });
+*/

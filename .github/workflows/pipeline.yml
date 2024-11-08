@@ -22,7 +22,7 @@ jobs:
           node-version: ou '20' para a versão mais recente
       
       - name: Instalar dependências
-        run: npm install
+        run: yarn install
       
       - name: Executar testes
-        run: npm test
+        run: yarn test
